@@ -9,13 +9,17 @@ public class App
     {
         //Initializes Scanner
         Scanner myObj = new Scanner(System.in);
-        System.out.println( "Enter the quotes" );
+
+        System.out.print( "Enter the quote " );
         //Input
         String Quotes =  myObj.nextLine();
+
         //Input
-        System.out.println( "Who said it?" );
+        System.out.print( "Who said it? " );
         String author =  myObj.nextLine();
+
         //Output
-        System.out.println( author + " said," +"\"" + Quotes +"\"" );
+        String print = String.format("%s says,\"%s\".",author,Quotes);
+        System.out.println(print);
     }
 }
